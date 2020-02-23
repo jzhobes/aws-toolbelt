@@ -1,0 +1,28 @@
+{
+  "name": "aws-toolbelt",
+  "version": "1.0.0",
+  "description": "Collection of useful AWS-related tools and utility methods.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jzhobes@github.com/jzhobes/aws-toolbelt.git"
+  },
+  "keywords": [
+    "aws",
+    "node",
+    "aws-sdk"
+  ],
+  "author": "John Ho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jzhobes/aws-toolbelt/issues"
+  },
+  "homepage": "https://github.com/jzhobes/aws-toolbelt#readme",
+  "dependencies": {
+    "aws-sdk": "^2.624.0"
+  }
+}
