@@ -91,6 +91,20 @@ async function scanTableWithAutoPagination(tableName, filters) {
 }
 
 /**
+ * Create a new item in a table.
+ *
+ * @param {Object} item
+ * @param {string} tableName
+ * @returns {Promise}
+ */
+async function put(item, tableName) {
+  await documentClient.put({
+    TableName: tableName,
+    Item: item,
+  }).promise();
+}
+
+/**
  * Performs a batch write and automatically chunks requests into 25 items per request if necessary.
  *
  * @param {Array} requests
@@ -329,6 +343,7 @@ module.exports = {
   batchWrite,
   describeTable,
   listTables,
+  put,
   queryTable,
   queryTableWithAutoPagination,
   scanTable,
