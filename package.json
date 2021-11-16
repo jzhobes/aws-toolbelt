@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/jzhobes/aws-toolbelt#readme",
   "dependencies": {
-    "aws-sdk": "^2.624.0"
+    "aws-sdk": "^2.814.0"
   }
 }
